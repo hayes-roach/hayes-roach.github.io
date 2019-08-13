@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Hayes Roach</title>
+    <link rel = "stylesheet" type = "text/css" href = "styler.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    
+
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="header">
+        <div class="menu">
+            <div class="link" onclick="openPage('Home')"  id="defaultOpen">
+                <div class="title">HOME</div>
+                <div class="bar"></div>
+            </div>
+            <div class="link" onclick="openPage('About Me')">
+                <div class="title">About Me</div>
+                <div class="bar"></div>
+            </div>
+            <div class="link" onclick="openPage('Resume')">
+                <div class="title">Resume</div>
+                <div class="bar"></div>
+            </div>
+            <div class="link" onclick="openPage('Projects')">
+                <div class="title">Projects</div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="Home" class="tabcontent">
+            <img src="me.jpg" alt="Me" class="avatar">
+            <h1 class="name">Hayes Roach</h1>
+            <h1 class="softwareEngineer">Software Engineer</h1>
+            <a href="mailto:hroach4@students.kennesaw.edu" target="_blank" rel="noopener noreferrer" ><img src="mail.png" alt="mail" id="mail" class="icon"></a>
+            <a href="https://www.linkedin.com/in/hayesroach/" target="_blank" rel="noopener noreferrer" ><img src="linkedin.png" alt="linkedIn" id="linkedIn" class="icon"></a>
+            <a href="https://www.twitter.com/hayesroach" target="_blank" rel="noopener noreferrer" ><img src="twitter.png" alt="twitter" id="twitter" class="icon"></a>
+        
+            <a href="https://stackoverflow.com/users/8685250/hayes-roach?tab=profile" target="_blank" rel="noopener noreferrer" ><img src="stackoverflow.png" alt="stackoverflow" id="stackoverflow" class="icon"></a>
+            <a href="https://www.github.com/hazer888" target="_blank" rel="noopener noreferrer" ><img src="github.png" alt="github" id="github" class="icon"></a>
+    </div>
+          
+    <div id="About Me" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p> 
+    </div>
+          
+    <div id="Resume" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+          
+    <div id="Projects" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="mountains_js.js"></script>
+    <script>
+            function openPage(tabName) {
+              var i;
+              var x = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(tabName).style.display = "block";  
+            }
+            document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+</body>
+</html>

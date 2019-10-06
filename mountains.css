@@ -66,6 +66,21 @@ canvas {
 
 }
 
+#Resume {
+    z-index: 1;
+    position: absolute;
+    height:80%;
+    display:table;
+    width: 90%;
+    text-align:center;
+    overflow: auto;
+    margin: auto;
+    top: 20px;left: 0;bottom: 0;right: 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+
+}
+
 .whiteBackground {
     z-index: 1;
     position: absolute;

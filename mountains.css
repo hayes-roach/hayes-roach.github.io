@@ -155,8 +155,12 @@ canvas {
 	 bottom: 5px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, p {
     color: white;
+}
+
+.card-body p {
+    color: black;
 }
 
 
